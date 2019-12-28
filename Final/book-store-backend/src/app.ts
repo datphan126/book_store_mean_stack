@@ -24,9 +24,7 @@ const db = mongoose.connection;
 const app = express();
 
 // Add front-end server's IP to the Access Control List to allow our Angular app call the API
-const FRONT_END_SERVER_IP = 'ec2-54-187-230-237.us-west-2.compute.amazonaws.com';
-const FRONT_END_PORT = '4200';
-const FRONT_END_SERVER = 'http://' + FRONT_END_SERVER_IP + ':' + FRONT_END_PORT;
+const FRONT_END_SERVER = 'http://' + process.env.FRONT_END_SERVER_IP + ':' + process.env.FRONT_END_PORT;
 app.use(cors({ origin: FRONT_END_SERVER }));
 
 // support parsing of application/json type post data
@@ -50,4 +48,4 @@ app.post('/birthdayCard', addBirthdayCard);
 
 app.get('/birthdayCards', fetchBirthdayCards);
 
-app.listen(process.env.PORT, () => console.log(`The server is running at http://localhost:${process.env.PORT}`));
+app.listen(process.env.BACKEND_PORT, () => console.log(`The server is running at http://localhost:${process.env.BACKEND_PORT}`));
