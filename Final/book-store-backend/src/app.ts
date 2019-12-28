@@ -25,7 +25,9 @@ const app = express();
 
 // Add front-end server's IP to the Access Control List to allow our Angular app call the API
 const FRONT_END_SERVER_IP = 'ec2-54-187-230-237.us-west-2.compute.amazonaws.com';
-app.use(cors({ origin: 'http://' + FRONT_END_SERVER_IP + ':4200' }));
+const FRONT_END_PORT = '4200';
+const FRONT_END_SERVER = 'http://' + FRONT_END_SERVER_IP + ':' + FRONT_END_PORT;
+app.use(cors({ origin: FRONT_END_SERVER }));
 
 // support parsing of application/json type post data
 app.use(bodyParser.json());
