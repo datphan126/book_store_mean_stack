@@ -7,11 +7,11 @@ import { HttpClient } from '@angular/common/http';
 export class ApiService {
   private BACKEND_SERVER_IP = 'ec2-54-187-230-237.us-west-2.compute.amazonaws.com';
   private BACKEND_SERVER_PORT = '8080';
-  private ADD_NEW_BOOK_API = 'http://' + this.BACKEND_SERVER_IP + ':' + BACKEND_SERVER_PORT + '/book';
-  private ADD_NEW_BIRTHDAY_CARD_API = 'http://' + this.BACKEND_SERVER_IP + ':' + BACKEND_SERVER_PORT + '/birthdayCard';
-  private FETCH_BOOKS_API = 'http://' + this.BACKEND_SERVER_IP + ':' + BACKEND_SERVER_PORT + '/books';
-  private FETCH_BIRTHDAY_CARDS_API = 'http://' + this.BACKEND_SERVER_IP + ':' + BACKEND_SERVER_PORT + '/birthdayCards';
-  private FECTH_BOOK_API = 'http://' + this.BACKEND_SERVER_IP + ':' + BACKEND_SERVER_PORT + '/book';
+  private ADD_NEW_BOOK_API = 'http://' + this.BACKEND_SERVER_IP + ':' + this.BACKEND_SERVER_PORT + '/book';
+  private ADD_NEW_BIRTHDAY_CARD_API = 'http://' + this.BACKEND_SERVER_IP + ':' + this.BACKEND_SERVER_PORT + '/birthdayCard';
+  private FETCH_BOOKS_API = 'http://' + this.BACKEND_SERVER_IP + ':' + this.BACKEND_SERVER_PORT + '/books';
+  private FETCH_BIRTHDAY_CARDS_API = 'http://' + this.BACKEND_SERVER_IP + ':' + this.BACKEND_SERVER_PORT + '/birthdayCards';
+  private FECTH_BOOK_API = 'http://' + this.BACKEND_SERVER_IP + ':' + this.BACKEND_SERVER_PORT + '/book';
   private UPDATE_BOOK_API = this.ADD_NEW_BOOK_API;
   private DELETE_BOOK_API = this.ADD_NEW_BOOK_API;
 
