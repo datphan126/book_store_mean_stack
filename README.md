@@ -3,7 +3,10 @@ The application in this project is an online Book Store web application where ME
 
 This project was copied from this [repository](https://github.com/datphan126/CS242_MEAN_fullstack) and was then modified to make it work with my AWS EC2 instance.
 
-# How to run the application
+# Live demo
+http://ec2-54-187-230-237.us-west-2.compute.amazonaws.com:4200/
+
+# How to build and run the application
 1) Login to your AWS EC2 instance
 2) Setup Node on your machine
 3) Navigate to the folder book-store-backend
