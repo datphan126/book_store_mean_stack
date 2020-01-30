@@ -5,13 +5,18 @@ This project was copied from this [repository](https://github.com/datphan126/CS2
 
 # How to run the application
 1) Login to your AWS EC2 instance
-2) Navigate to the folder named book-store-backend/public
-3) Start back-end server: `nohup node app.js &`
-4) Navigate to the folder named book-store
-5) Start front-end server:
-`nohup ng serve --host <ec2_ipv4> --port <port_number> &`
-6) Exit the terminal by using the '**exit**' command (DO NOT CLOSE THE TERMINAL!!!!)
-
-The application can be accessed through this link:
-
-http://<your_ec2_domain_name>:4200
+2) Setup Node on your machine
+3) Navigate to the folder book-store-backend
+4) Run the command `npm i` to install all required dependencies for the back-end server
+5) Navigate to book-store-backend/src
+6) Run `npm run tsc` to build your bacnkend's code
+7) Navigate to book-store-backend/public
+8) Start the backend server:
+**`nohup node app.js &`**
+9) Navigate to the folder book-store
+10) Run the command `npm i` to install all required dependencies for the front-end server
+11) Start the front-end server:
+**`nohup ng serve --host <ec2_ipv4> --port <port_number> &`**
+12) Exit the terminal by using the '**exit**' command (DO NOT CLOSE THE TERMINAL!!!!)
+13) The application can be accessed through this link:
+**http://<your_ec2_domain_name>:4200**
