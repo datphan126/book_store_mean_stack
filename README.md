@@ -10,7 +10,7 @@ This project was copied from this [repository](https://github.com/datphan126/CS2
 4) Navigate to the folder named book-store
 5) Start front-end server:
 `nohup ng serve --host <ec2_ipv4> --port <port_number> &`
-Exit the terminal by using the '**exit**' command (DO NOT CLOSE THE TERMINAL!!!!)
+6) Exit the terminal by using the '**exit**' command (DO NOT CLOSE THE TERMINAL!!!!)
 
 The application can be accessed through this link:
 
